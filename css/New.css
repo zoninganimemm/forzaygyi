@@ -1,0 +1,106 @@
+main div nav {
+  margin: 10px 0px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main div nav::before {
+  content: "";
+  position: absolute;
+  height: 50px;
+  border-bottom: 5px solid #ececec;
+  animation: Title 5s forwards;
+}
+@keyframes Title {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 95%;
+  }
+}
+main div nav a {
+  padding: 10px;
+  z-index: 10;
+}
+footer .Slider {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  row-gap: 10px;
+  width: 90%;
+  overflow-y: hidden;
+  overflow-x: auto;
+  padding: 10px 0px;
+  padding-left: 5%;
+}
+footer .Slider::before,
+footer .Slider::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 227px;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  z-index: 10;
+}
+footer .Slider::before {
+  left: 0;
+}
+footer .Slider::after {
+  right: 0;
+  transform: rotateZ(180deg);
+}
+
+footer .Slider-Title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .Slider-Title a {
+  padding: 10px 5px;
+  border: 1px solid #afafaf;
+  color: #afafaf;
+  font-weight: bold;
+}
+footer .Slider a {
+  color: black;
+  font-weight: bold;
+}
+footer .Slider a:hover {
+  scale: 1.1;
+}
+footer .Slider a img {
+  width: 110px;
+  height: 146.844px;
+  border-radius: 5px;
+}
+footer .Slider a p {
+  margin: 0px;
+  font-weight: bold;
+  display: -webkit-box;
+  height: fit-content;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+footer .Slider::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+footer .Slider::-webkit-scrollbar-track {
+  background-color: none;
+}
+footer .Slider::-webkit-scrollbar-thumb {
+  background: #afafaf;
+  border: #afafaf;
+  border-radius: 10px;
+}
+
+main div nav h1 {
+  margin: 0px;
+}

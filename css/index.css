@@ -1,0 +1,41 @@
+/* Boy Content*/
+section {
+  padding-left: 5%;
+}
+section div {
+  padding: 0% 10%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+section div a {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0px;
+  padding-left: 10%;
+  border: 1px solid #ececec;
+  box-shadow: 0px 10px 20px #afafaf;
+  align-items: center;
+  column-gap: 10px;
+}
+section div a img {
+  width: 46px;
+  border-radius: 5px;
+}
+section div a:hover {
+  scale: 1.1;
+}
+.animation {
+  animation: overflow forwards;
+  animation-timeline: view(200px);
+  opacity: 0;
+}
+@keyframes overflow {
+  from {
+    scale: 0 0;
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
